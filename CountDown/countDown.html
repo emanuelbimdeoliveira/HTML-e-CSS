@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="Emanuel Bim" />
+    <meta name="tittle" content="CountDown"/>
+    <meta name="description" content="Esse é um CountDown que calcula as horas, minutos e segundos restantes baseado nos dados inseridos pelo usuário"/>
+    <meta name="keywords" content="CountDown Relógio Contador de tempo"/>
+   
+    <link rel="shortcut icon" href="C:\Users\Emanuel dos Santos\Pictures\Screenshots\Captura de tela 2023-04-02 132651.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="countDown.css"/>
+    <link rel="stylesheet" href="fontawesome-free-6.4.0-web/fontawesome-free-6.4.0-web/css/all.min.css"/>
+    
+    <title>CountDown</title>
+</head>
+<body class="temaPadraoBody">
+    <section id="telaInicial">
+        <a href="#telaParaOrientacao" target="_self" class="temaPadraoParagrafo">Entrar</a>
+    </section>
+
+    <section id="telaParaOrientacao" class="temaPadraoBody">
+        <main id="main">
+            <a href="#" target="_self" class="voltarPagina fa-sharp fa-solid fa-angles-left"></a>
+            <legend><p class="temaPadraoParagrafo">Adicione a hora final</p></legend>
+            <form>
+                <input type="time" name="horaFinal" class="temaPadraoParagrafo" id="tempo">
+                <a href="#telaCountDown" class="temaPadraoParagrafo" target="_self">Avançar</a>
+            </form>
+        </main>
+    </section>  
+
+    <section id="telaCountDown" class="temaPadraoBody">
+        <div class="tituloCountDown">
+            <a href="#telaParaOrientacao" target="_self" class="voltarPagina fa-solid fa-angles-left"></a>
+            <i id="menu" class="voltarPagina fa-solid fa-bars" style="left: auto; right: 0;"></i>
+            <h1 class="flexTexto">CountDown</h1>
+            <div class="mostradorNumeros">
+                <p class="display flexTexto">00h : 00m : 00s</p>
+            </div>          
+        </div>
+    </section>
+
+    <script src="countDown.js"></script>
+</body>
+</html>

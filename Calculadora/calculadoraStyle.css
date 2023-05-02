@@ -1,0 +1,206 @@
+@font-face {
+    font-family: fonte;
+    src: url(fontes/Sunday\ Best\ ttf.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-shadow: inset -10px -15px 15px 5px #00000047, inset 10px 15px 15px 5px #ffffff20, 4px 4px 20px #00040080;
+    background: linear-gradient(45deg, #117200, #78fd60, #26ff00);
+}
+
+body {
+    /* background-color: #c5f4bd; */
+    font-family: 'fonte', 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+    user-select: none;
+    margin: auto;
+    max-width: 800px;
+}
+
+.header {
+    text-align: center;
+    font-family: 'fonte', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    background: radial-gradient(ellipse at 50% 2%, hsl(330, 100%, 72%) 30%, hsl(330, 98%, 40%));
+    /* background: linear-gradient(45deg, hsl(330, 98%, 40%), hsl(330, 96%, 67%), hsl(330, 100%, 50%)); */
+    border: solid 2px black;
+    box-shadow: inset -10px 0 15px 5px #00000047, inset 10px 15px 15px 5px #ffffff20, 4px 4px 20px #00040080;
+    margin: auto;
+    max-width: 800px;
+    height: 25%;
+    text-shadow: 0 0 5px #ffff;
+}
+
+.menu {
+    position: absolute;
+    z-index: 1;
+    height: 50px;
+    font-size: 1.5em;
+    font-weight: bold;
+    width: 50px;
+}
+
+.menu:hover {
+    color: white;
+}
+
+p.telaNumeros {
+    background: hsl(330, 98%, 18%);
+    border: solid 2px black;
+    text-shadow: 4px 4px 0 #000400;
+    box-shadow: inset -10px -15px 15px 5px #00000047, inset 10px 15px 15px 5px #ffffff20, 4px 4px 20px #00040080;
+    width: 80%;
+    height: 60px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #fff;
+    margin: 2% auto;
+}
+
+main {
+    height: 100vh;
+    padding: 5% 0;
+    max-width: 800px;
+}
+
+.main {
+    background: black;
+    display: grid;
+    grid-template-areas: 
+    "btNumero1 btNumero2 btNumero3"
+    "btNumero4 btNumero5 btNumero6"
+    "btNumero7 btNumero8 btNumero9"
+    "btSinalMais btNumero0 btRes"
+    "btSinalMais btNumeroNaVerdadeVirgula btRes"
+    "btSinalMenos btSinalMult btSinalDiv"
+    "btDel btExponencial btBackspace"
+    "btDel btInverter btBackspace";
+    gap: 3px;
+    margin: auto;
+    box-shadow: 4px 4px 20px #00040070, 4px 4px 20px #00040070;    
+    padding: 2% 5%;
+    height: 75%;
+    max-height: 800px;
+}
+
+button {
+    background: linear-gradient(45deg, hsl(330, 98%, 40%), hsl(330, 96%, 67%), hsl(330, 100%, 50%));
+    width: 90%;
+    height: 100%;
+    text-shadow: 0 0 5px #ffff;
+    box-shadow: inset -10px -15px 15px 5px #00040063, inset 10px 15px 15px 5px #ffffff29, 4px 4px 20px #000400f0;
+    font-family: 'fonte', Arial, Helvetica, sans-serif;font-size: 1em; 
+    font-weight: 700;
+    border-radius: 3%;
+    border: none;
+    transition-duration: .5s;
+    margin: auto;
+}
+
+button:hover {
+    background: #f5deb3;
+}
+
+button:active {
+    background: #f0e7d7;
+    transform: scale(0.9);
+}
+
+.btNumero1 {
+    grid-area: btNumero1;
+}
+
+.btNumero2 {
+    grid-area: btNumero2;
+}
+
+.btNumero3 {
+    grid-area: btNumero3;
+}
+
+.btNumero4 {
+    grid-area: btNumero4;
+}
+
+.btNumero5 {
+    grid-area: btNumero5;
+}
+
+.btNumero6 {
+    grid-area: btNumero6;
+}
+
+.btNumero7 {
+    grid-area: btNumero7;
+}
+
+.btNumero8 {
+    grid-area: btNumero8;
+}
+
+.btNumero9 {
+    grid-area: btNumero9;
+}
+
+.btNumero0 {
+    grid-area: btNumero0;
+}
+
+.btSinalMais {
+    grid-area: btSinalMais;
+    background: linear-gradient(45deg, #a70011, #ff1629, #aa000e);
+}
+
+.btSinalMenos {
+    grid-area: btSinalMenos;
+    background: linear-gradient(45deg, #001392, #005eff, #0022ff);
+}
+
+.btRes {
+    grid-area: btRes;
+    background: linear-gradient(45deg, #a70011, #ff1629, #aa000e);
+}
+
+.btSinalMult {
+    grid-area: btSinalMult;
+    background: linear-gradient(45deg, #001392, #005eff, #0022ff);
+
+}
+
+.btSinalDiv {
+    grid-area: btSinalDiv;
+    background: linear-gradient(45deg, #001392, #005eff, #0022ff);
+
+}
+
+.btDel {
+    grid-area: btDel;
+    background: linear-gradient(45deg, #a70011, #ff1629, #aa000e);
+}
+
+.btBackspace {
+    grid-area: btBackspace;
+    font-weight: 800;
+    background: linear-gradient(45deg, #a70011, #ff1629, #aa000e);
+}
+
+.btNumeroNaVerdadeVirgula {
+    grid-area: btNumeroNaVerdadeVirgula;
+}
+
+.btInverter {
+    grid-area: btInverter;    
+    background: linear-gradient(45deg, #001392, #005eff, #0022ff);
+}
+
+.btSinalExponencial {
+    grid-area: btExponencial;
+    background: linear-gradient(45deg, #001392, #005eff, #0022ff);
+
+}
