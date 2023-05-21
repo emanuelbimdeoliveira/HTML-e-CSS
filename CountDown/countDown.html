@@ -24,8 +24,8 @@
         <main id="main">
             <a href="#" target="_self" class="voltarPagina fa-sharp fa-solid fa-angles-left"></a>
             <legend><p class="temaPadraoParagrafo">Adicione a hora final</p></legend>
-            <form>
-                <input type="time" name="horaFinal" class="temaPadraoParagrafo" id="tempo">
+            <form autocomplete="on">
+                <input type="time" name="horaFinal" required class="temaPadraoParagrafo" id="tempo">
                 <a href="#telaCountDown" class="temaPadraoParagrafo" target="_self">Avançar</a>
             </form>
         </main>
@@ -35,7 +35,7 @@
         <div class="tituloCountDown">
             <a href="#telaParaOrientacao" target="_self" class="voltarPagina fa-solid fa-angles-left"></a>
             <i id="menu" class="voltarPagina fa-solid fa-bars" style="left: auto; right: 0;"></i>
-            <h1 class="flexTexto">CountDown</h1>
+            <h1 class="flexTexto" contenteditable autocapitalize="true">CountDown</h1>
             <div class="mostradorNumeros">
                 <p class="display flexTexto">00h : 00m : 00s</p>
             </div>          

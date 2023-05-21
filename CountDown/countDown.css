@@ -3,20 +3,6 @@
     src: url(fonte/richsten/Richsten\ Demo.otf);
 }
 
-@media screen and (max-width: 550px) {
-    #main {
-        font-size: .5em;
-    }
-
-    #main a.voltarPagina {
-        font-size: 5vw;
-    }
-
-    aside {
-        font-size: 2vw;
-    }
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -27,22 +13,22 @@
 }
 /* temas padrão para modificação das cores */
 .temaPadraoBody {
-    background: radial-gradient(circle at 50% 100%, #37deff, #0023f1, #0000a5);
+    background: radial-gradient(circle at 50% 100%, #077eff, #0023f1, #0000a5);
     color: white;
     box-shadow: inset -100px -100px 50px #0000001d, inset 100px 100px 50px #ffffff23;
 }
 
 .temaClaroBody {
-    background: radial-gradient(circle at 50% 100%, #acc, #9bb, #788);
+    background: radial-gradient(circle at 50% 100%, #ffe, #ddc, #aa9);
     color: black;
-    box-shadow: inset -100px -100px 50px #0000001d, inset 100px 100px 50px #ffffff23;
+    /* box-shadow: inset -100px -100px 50px #0000001d, inset 100px 100px 50px #ffffff23; */
     text-shadow: 2px 2px 0px white;
 }
 
 .temaEscuroBody {
-    background: radial-gradient(circle at 50% 100%, #555, #333, #000);
+    background: radial-gradient(circle at 50% 100%, #222, #111, #000);
     color: white;
-    box-shadow: inset -100px -100px 50px #0000001d, inset 100px 100px 50px #ffffff13;
+    /* box-shadow: inset -100px -100px 50px #0000001d, inset 100px 100px 50px #ffffff13; */
     text-shadow: 2px 2px 0px black;
 }
 
@@ -78,7 +64,7 @@
 }
 
 .temaClaroParagrafo {
-    background: linear-gradient(45deg, #86a9a4, #acc, #8aa);
+    background: linear-gradient(45deg, #0005, #0002, #0007);
     text-shadow: 0 2px 0px white, 0 3px 0px white;
     color: black;
     box-shadow: inset -20px -20px 20px #0000003d, inset 20px 20px 20px #ffffff33, 5px 5px 10px #002;
@@ -89,7 +75,7 @@
 }
 
 .temaEscuroParagrafo {
-    background: linear-gradient(45deg, #444, #666, #555);
+    background: linear-gradient(45deg, #333, #555, #444);
     color: white;
     box-shadow: inset -50px -50px 50px #0000006d, inset 100px 100px 50px #ffffff33;
     text-shadow: 2px 2px 0px black;
@@ -128,7 +114,7 @@ body {
     top: 45%;
     right: 20%;
     margin: auto;
-    box-shadow: inset -20px -20px 20px #0000003d, inset 20px 20px 20px #ffffff33, 5px 5px 10px #002;
+    box-shadow: inset -20px -20px 20px #0000003d, inset 20px 20px 20px #ffffff33, 5px 5px 10px #000a;
     font-size: 2em;
     font-weight: bold;
     border-radius: 10px;
@@ -252,7 +238,6 @@ form a:hover {
     max-width: 900px;
     width: 100%;
     height: 70%;
-    border: solid 3px black;
     margin: 15vh auto 0;
     position: relative;
 }
@@ -274,11 +259,13 @@ h1 {
     margin: auto;
 }
 
-p.display {
-    background-color: #0003;
-    box-shadow: inset -20px -20px 20px #0000003d, inset 20px 20px 20px #ffffff23;
+.display {
+    background-color: #0005;
+    /* box-shadow: inset -20px -20px 20px #0000003d, inset 20px 20px 20px #ffffff23; */
+    border-radius: 10px ;
     margin: 1% auto;
-    height: 50%;
+    height: 60%;
+    font-size: 4.5em;
 }
 
 p {
@@ -357,4 +344,24 @@ aside p:active {
 
 #check:checked ~ .relogioHoraAtual {
     display: block;
+}
+
+
+/* media query */
+@media screen and (max-width: 550px) {
+    #main {
+        font-size: .5em;
+    }
+
+    #main a.voltarPagina {
+        font-size: 5vw;
+    }
+
+    aside {
+        font-size: 2vw;
+    }
+
+    .display {
+        font-size: 3em;
+    }
 }
