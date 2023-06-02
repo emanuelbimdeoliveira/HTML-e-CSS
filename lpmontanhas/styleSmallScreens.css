@@ -1,0 +1,95 @@
+@media screen and (max-width:900px) {
+    body {
+        width: 100vw;
+
+        font-size: .5em;
+    }
+
+    header {
+        width: 100%;
+        height: 30vh;
+
+        background: #040 url(imagens/Background-Header.jpg) no-repeat fixed;
+        background-size: 120%;
+    }
+
+    header nav {
+        width: 100%;
+
+        display: flex;
+        flex-flow: row wrap;
+        align-items: flex-start;
+    }
+
+    header nav ul {
+        width: 40%;
+        height: 40%;
+        padding: 1%;
+
+        font-size: .8em;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    header nav p {
+        margin: 1%;
+    }
+
+    /* li { */
+        /* margin-right: 2%; */
+        /* float: right; */
+    /* } */
+
+    .banner {
+        width: 90%;
+        margin: 0 auto;
+        padding: 1% 3%;
+
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+    
+    }
+
+    section {        
+        width: 90%;
+        margin: 5% auto 0;
+        padding: 1%;
+
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;    
+    }
+
+    section:nth-child(2n) {
+        flex-flow: column;
+    }    
+
+    section article {
+        background: #0001;
+        margin: 2% auto;
+
+        max-width: 95%;
+    }
+
+    p {
+        margin: 5% auto;
+    }
+
+
+    img {
+        display: block;
+        max-width: 95%;
+
+        margin: auto;
+    }
+
+    footer {
+        font-size: .5em;
+
+    }
+}
